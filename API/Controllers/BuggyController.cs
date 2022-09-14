@@ -6,7 +6,7 @@ using System;
 
 namespace API.Controllers
 {
-    
+
     public class BuggyController : BaseApiController
     {
         private readonly DataContext _context;
@@ -16,7 +16,6 @@ namespace API.Controllers
             _context = context;
         }
 
-        [Authorize]
         [HttpGet("auth")]
         public ActionResult<string>GetSecret()
         {
